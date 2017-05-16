@@ -31,4 +31,5 @@ node default {
   # Example:
   #   class { 'my_class': }
   notify { "My master is ${servername}": }
+  include profile::meth_862
 }
