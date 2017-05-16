@@ -50,6 +50,3 @@ mod 'module_audit',
   :git => 'git@github.com:puppetlabs/prosvc-module_audit.git'
 mod 'cs-solutions',
   :git => 'git@github.com:puppetlabs/cs-solutions.git'
-mod 'prosvc-engagement-docs',
-  :git => 'git@github.com:puppetlabs/prosvc-engagement-docs.git'
-
