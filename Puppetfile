@@ -43,6 +43,7 @@ mod 'attachmentgenie/ssh', '2.1.0'
 mod 'fiddyspence/sysctl', '1.1.0'
 mod 'maestrodev/rvm', '1.13.1'
 mod 'golja/gnupg', '1.2.3'
+mod 'puppetlabs/puppetserver_gem', '1.0.0'
 
 mod 'adviser',
   :git => 'git@github.com:puppetlabs/prosvcs-adviser.git'
@@ -50,3 +51,4 @@ mod 'module_audit',
   :git => 'git@github.com:puppetlabs/prosvc-module_audit.git'
 mod 'cs-solutions',
   :git => 'git@github.com:puppetlabs/cs-solutions.git'
+
