@@ -6,10 +6,24 @@ class profile::meth_862 {
     ensure   => present,
     provider => 'puppet_gem',
   }
-  package { 'puppet-lint-server':
-    name     => 'puppet-lint',
-    ensure   => present,
-    provider => 'puppetserver_gem',
+
+  package { 'jmx-server':
+    name            => 'jmx',
+    ensure          => present,
+    provider        => 'puppetserver_gem',
+    install_options => ['--no-ri', '--no-rdoc']
+  }
+
+  # module_audit requirement:
+  # You must have the wc binary in your $PATH
+  package { 'coreutils':
+    ensure => present,
+  }
+
+  package { 'googlecharts':
+    ensure          => present,
+    provider        => 'puppet_gem',
+    install_options => ['--no-ri', '--no-rdoc']
   }
 
 }
